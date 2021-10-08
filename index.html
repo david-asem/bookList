@@ -11,6 +11,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+      .success,
+      .error {
+        color: white;
+        padding: 5px;
+        margin: 5px 0 15px 0;
+      }
+      .success {
+        background: greenyellow;
+      }
+      .error {
+        background: red;
+      }
+    </style>
     <title>Book List Project</title>
   </head>
   <body>
@@ -29,8 +43,9 @@
           <label for="isbn">ISBN</label>
           <input type="text" id="isbn" class="u-full-width" />
         </div>
+        <input type="submit" class="u-full-width" value="Submit" id="submit" />
       </form>
-      <hr />
+
       <table class="u-full-width">
         <thead>
           <tr>
