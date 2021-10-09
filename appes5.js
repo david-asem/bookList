@@ -48,7 +48,7 @@ UI.prototype.showAlert = function (message, className) {
 UI.prototype.clearFields = function () {
   document.getElementById('title').value = "";
   document.getElementById('author').value = "";
-  document.getElementById('isbn ').value = "";
+  document.getElementById('isbn').value = "";
 }
 
 //event listeners
@@ -75,7 +75,8 @@ function submit(event) {
     ui.showAlert('Please fill in the fields. Thank you', 'error')
   } else {
     //add book to list
-  ui.addBookToList(book);
+    ui.addBookToList(book);
+    ui.showAlert('Book Added Successfully!', 'success');
 
   //clear fields
   ui.clearFields(book);
